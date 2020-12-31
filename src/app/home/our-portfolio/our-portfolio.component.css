@@ -1,0 +1,26 @@
+.portfolio{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+}
+.portfolio h1{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.port{
+    background-image: linear-gradient(to left, #932bd5, #a127de, #af22e8, #be18f0, #cd04f9);
+    color: white;
+    padding: 25px 0px 25px 25px;
+}
+.port h2{
+    font-size: 25px;
+}
+.port h3{
+    font-weight: bold;
+}
+.port h4{
+    margin-bottom: 20px;
+}
