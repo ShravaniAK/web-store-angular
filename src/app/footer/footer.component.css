@@ -1,0 +1,57 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background-color: #151414;
+}
+.footer h3{
+    color: rgb(238, 236, 236);
+    margin-bottom: 20px;
+}
+.footer h2{
+    color: rgb(238, 236, 236);
+    font-size: 20px;
+}
+.footer p{
+    color: #676666;
+    font-weight: 600;
+    text-align: justify;
+}
+.hr-line{
+    background-color: rgb(66, 66, 66);
+}
+.copyright{
+    background-color: rgb(27, 27, 27);
+    padding:10px 0px;
+}
+.copyright p{
+    font-weight: 600;
+    color: rgb(238, 236, 236);
+    margin: 0;
+    font-size: 14px;
+}
+
+.points a{
+    display: block;
+    color: #676666;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight:600;
+    transition: all .3s ease;
+}
+.points a:hover{
+    color: #4cc2c0;
+    transform: translateX(3px);
+}
+
+.title-hr{
+    height: 2px;
+    width: 50%;
+    margin:0px 0px 10px 0px;
+    background-color: #4cc2c0 ;
+}
+
+.des{
+    padding:10px 15px 0px 15px;
+    background-color: rgb(26, 26, 26);
+    margin-bottom: 10px;
+}
