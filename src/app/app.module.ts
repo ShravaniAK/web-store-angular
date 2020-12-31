@@ -10,6 +10,7 @@ import { OurServicesComponent } from './home/our-services/our-services.component
 import { OurPortfolioComponent } from './home/our-portfolio/our-portfolio.component';
 import { HowWeAreComponent } from './home/how-we-are/how-we-are.component';
 import { QuickQuoteFormComponent } from './home/quick-quote-form/quick-quote-form.component';
+import { FeaturedComponent } from './home/featured/featured.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { QuickQuoteFormComponent } from './home/quick-quote-form/quick-quote-for
     OurServicesComponent,
     OurPortfolioComponent,
     HowWeAreComponent,
-    QuickQuoteFormComponent
+    QuickQuoteFormComponent,
+    FeaturedComponent
   ],
   imports: [
     BrowserModule,

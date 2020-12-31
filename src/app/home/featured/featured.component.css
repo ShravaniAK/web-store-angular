@@ -1,0 +1,13 @@
+.featured-landing{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(to right top, #8b49f1, #8147ea, #7744e4, #6c42dd, #623fd6, #583acb, #4e35c1, #4430b6, #3828a6, #2d2095, #201986, #131176);
+}
+.featured-landing h1{
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.featured-landing p{
+    color:white;
+}
