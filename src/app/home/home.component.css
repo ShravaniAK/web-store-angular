@@ -18,44 +18,7 @@
 
 
 
-.contact-form{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #f0f0f1;
-}
-.myform{
-    max-width:400px;
-    margin: 0 auto;
-    margin-top: -80px;
-    padding: 50px 20px;
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-    border-radius: 5px;
-    background-color: white;
-}
-.myform h3{
-    text-align: center;
-}
-.myform p{
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 30px;
-}
-.myform input{
-    width: 100%;
-    margin-bottom: 20px;
-    border:none;
-    border-bottom: 1px solid gray;
-    outline:none;
-}
-.myform button{
-    background-color: #0043c6;
-    color:white;
-    border:none;
-    outline:none;
-    border-radius: 4px;
-    padding:6px 15px;
-    
-}
+
 
 
 

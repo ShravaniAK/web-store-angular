@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { OurServicesComponent } from './home/our-services/our-services.component';
 import { OurPortfolioComponent } from './home/our-portfolio/our-portfolio.component';
 import { HowWeAreComponent } from './home/how-we-are/how-we-are.component';
+import { QuickQuoteFormComponent } from './home/quick-quote-form/quick-quote-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HowWeAreComponent } from './home/how-we-are/how-we-are.component';
     FooterComponent,
     OurServicesComponent,
     OurPortfolioComponent,
-    HowWeAreComponent
+    HowWeAreComponent,
+    QuickQuoteFormComponent
   ],
   imports: [
     BrowserModule,
