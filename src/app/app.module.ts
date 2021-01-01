@@ -11,6 +11,7 @@ import { OurPortfolioComponent } from './home/our-portfolio/our-portfolio.compon
 import { HowWeAreComponent } from './home/how-we-are/how-we-are.component';
 import { QuickQuoteFormComponent } from './home/quick-quote-form/quick-quote-form.component';
 import { FeaturedComponent } from './home/featured/featured.component';
+import { BenifitsComponent } from './home/benifits/benifits.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FeaturedComponent } from './home/featured/featured.component';
     OurPortfolioComponent,
     HowWeAreComponent,
     QuickQuoteFormComponent,
-    FeaturedComponent
+    FeaturedComponent,
+    BenifitsComponent
   ],
   imports: [
     BrowserModule,

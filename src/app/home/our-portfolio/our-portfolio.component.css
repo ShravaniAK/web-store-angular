@@ -10,11 +10,18 @@
     margin-bottom: 40px;
 }
 
-.port{
-    background-image: linear-gradient(to left, #932bd5, #a127de, #af22e8, #be18f0, #cd04f9);
+.port:nth-child(1){
     color: white;
     padding: 25px 0px 25px 25px;
 }
+.portfolio .clr-purple{
+    background-image: linear-gradient(to left, #932bd5, #a127de, #af22e8, #be18f0, #cd04f9);
+   
+}
+.portfolio .clr-blue{
+    background-image: linear-gradient(to left, #0b88e4, #0090e5, #0098e5, #00a0e4, #0ea7e3);
+}
+
 .port h2{
     font-size: 25px;
 }

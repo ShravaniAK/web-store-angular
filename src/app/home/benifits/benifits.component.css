@@ -1,0 +1,54 @@
+.services{
+    padding-top :40px;
+    padding-bottom: 40px;
+    /* background-color: #f0f0f1; */
+    background-color: white;
+}
+.services h1{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+    color:#333333;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.item{
+   
+    border: 1px solid #ddd;
+    padding: 30px 30px 15px 30px;
+    background-color: white;
+    transition: all .3s ease;
+    position: relative;
+}
+.item .logo{
+    position: absolute;
+    top:-10px;
+    left:-10px;
+    background-color: white;
+    padding-right: 5px;
+}
+.item h4{
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #333;
+    text-align: right;
+}
+.item p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #555;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    text-align: right;
+}
+
+.item:hover{
+    transform: scale(1.05);
+     /* box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35); */
+     border: 1px solid #e2574c;
+}
