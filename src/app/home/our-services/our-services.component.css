@@ -28,13 +28,19 @@
     justify-content: center;
 }
 .item h4{
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 5px;
-    font-size: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color:#333;
 }
 .item p{
     margin-bottom: 5px;
     font-size: 15px;
+    color: #555;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 24px;
 }
 .item a{
     margin: 0;
@@ -43,11 +49,18 @@
 .item:hover{
     transform: scale(1.05);
     background: linear-gradient(to right top, #8b49f1, #8147ea, #7744e4, #6c42dd, #623fd6, #583acb, #4e35c1, #4430b6, #3828a6, #2d2095, #201986, #131176);
-    color: white;
 }
 .item:hover a{
     color: white;
 }
+.item:hover h4{
+    color: white;
+}
+.item:hover p{
+    color: white;
+}
+
+
 .tag{
     font-size: 15px;
     color: white;

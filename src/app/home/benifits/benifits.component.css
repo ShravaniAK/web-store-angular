@@ -24,7 +24,7 @@
 .item .logo{
     position: absolute;
     top:-10px;
-    left:-10px;
+    left:-1px;
     background-color: white;
     padding-right: 5px;
 }

@@ -4,13 +4,16 @@
     background-color: white;
 }
 .portfolio h1{
-    font-weight: bold;
-    color: black;
-    text-align: center;
+    text-transform: uppercase;
     margin-bottom: 40px;
+    text-align: center;
+    color:#333333;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
 
-.port:nth-child(1){
+.port{
     color: white;
     padding: 25px 0px 25px 25px;
 }

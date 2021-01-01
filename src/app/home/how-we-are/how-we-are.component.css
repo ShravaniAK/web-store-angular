@@ -4,13 +4,18 @@
     padding-bottom: 40px;
 }
 .how-we-are h1{
-    text-align: center;
-    color:black;
+    text-transform: uppercase;
     margin-bottom: 40px;
-    font-weight: bold;
+    text-align: center;
+    color:#333333;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
 .how-we-are p{
     text-align: justify;
     color:black;
+    letter-spacing:1px;
     margin-bottom: 40px;
+    font-weight: 400;
 }
