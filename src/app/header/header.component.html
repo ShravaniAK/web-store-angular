@@ -1,1 +1,151 @@
-<p>header works!</p>
+<!-- side nav for mobile start-->
+<div [@mobileNav]="tglState ? 'invisible' : 'visible'" class="side-nav-mobile nav-mobile-hide" id="mob-nav">
+
+    <div class="px-3 py-3 sdnav">
+
+        <a routerLink="" routerLinkActive="side-nav-active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" class="myli py-3 px-4"><svg width="25px" height="25px"
+            viewBox="0 0 16 16" class="bi bi-house mr-2" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+            <path fill-rule="evenodd"
+                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+        </svg>HOME
+        </a>
+        <a routerLink="/about" routerLinkActive="side-nav-active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" class="myli py-3 px-4"><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-person mr-2"
+            fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+            <path fill-rule="evenodd"
+                d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+        </svg>ABOUT
+        </a>
+        <a routerLink="/services" routerLinkActive="side-nav-active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" class="myli py-3 px-4"><svg width="25px" height="25px"
+            viewBox="0 0 16 16" class="bi bi-gear mr-2" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z" />
+            <path fill-rule="evenodd"
+                d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
+        </svg>SERVICES
+        </a>
+        <a routerLink="/portfolio" routerLinkActive="side-nav-active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" class="myli py-3 px-4"><svg width="25px"
+            height="25px" viewBox="0 0 16 16" class="bi bi-eye mr-2" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z" />
+            <path fill-rule="evenodd"
+                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+        </svg>PORTFOLIO
+        </a>
+        <a routerLink="/testimonial" routerLinkActive="side-nav-active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" class="myli py-3 px-4"><svg width="25px" height="25px"
+            viewBox="0 0 16 16" class="bi bi-envelope mr-2" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+        </svg>TESTIMONIAL
+        </a>
+        <a routerLink="/blog" routerLinkActive="side-nav-active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" class="myli py-3 px-4"><svg width="25px" height="25px"
+            viewBox="0 0 16 16" class="bi bi-envelope mr-2" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+        </svg>BLOG
+        </a>
+        <a routerLink="/contact" routerLinkActive="side-nav-active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" class="myli py-3 px-4"><svg width="25px" height="25px"
+            viewBox="0 0 16 16" class="bi bi-envelope mr-2" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+        </svg>CONTACT
+        </a>
+
+    </div>
+</div>
+
+
+<!-- side nav mobile black background  -->
+<div [@mobileBlackBackground]="tglState ? 'invisible' : 'visible'" class="" id="mob-nav-back" (click)="toggle()"></div>
+
+
+
+
+
+
+
+
+
+
+<!--  header -->
+<div class="dashboard-header">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="dashboard-header-flex">
+                    <div class="tgl-icn" (click)="toggle()">
+                        <button id="tgl-btn" class="">
+                            <div class="line"></div>
+                        </button>
+                    </div>
+                    <div class="tag">
+                        <div routerLink="/home" class="circle-profile">
+                            <p style="color: white;">WEB STORE</p>
+                        </div>
+                    </div>
+
+                    <div class="link-container">
+
+
+
+
+
+                        <div class="nav-links">
+                            <div class="mr-3">
+                                <a routerLink = "" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">HOME</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-links">
+                            <div class="mr-3">
+                                <a routerLink="about" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">ABOUT</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-links">
+                           
+                            <div class="mr-3">
+                                <a routerLink="services" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">SERVICES</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-links">   
+                            <div class="mr-3">
+                                <a routerLink="portfolio" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">PORTFOLIO</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-links">   
+                            <div class="mr-3">
+                                <a routerLink="testimonial" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">TESTIMONIAL</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-links">   
+                            <div class="mr-3">
+                                <a routerLink = "blog" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">BLOG</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-links">
+                          
+                            <div >
+                                <a routerLink = "contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">CONTACT US</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

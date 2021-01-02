@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -14,6 +16,8 @@ import { FeaturedComponent } from './home/featured/featured.component';
 import { BenifitsComponent } from './home/benifits/benifits.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { StepsComponent } from './home/steps/steps.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { WeDesignComponent } from './home/we-design/we-design.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,14 @@ import { StepsComponent } from './home/steps/steps.component';
     FeaturedComponent,
     BenifitsComponent,
     ContactFormComponent,
-    StepsComponent
+    StepsComponent,
+    ContactPageComponent,
+    WeDesignComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

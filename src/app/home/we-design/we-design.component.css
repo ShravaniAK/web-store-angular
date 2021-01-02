@@ -1,0 +1,20 @@
+.we-design{
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.we-design h1{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+    color:#333333;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.we-design p{
+    text-align: justify;
+    color:black;
+    letter-spacing:1px;
+    font-weight: 400;
+}
