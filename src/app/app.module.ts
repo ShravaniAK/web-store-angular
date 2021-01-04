@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -18,6 +21,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { StepsComponent } from './home/steps/steps.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { WeDesignComponent } from './home/we-design/we-design.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +38,16 @@ import { WeDesignComponent } from './home/we-design/we-design.component';
     ContactFormComponent,
     StepsComponent,
     ContactPageComponent,
-    WeDesignComponent
+    WeDesignComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,26 @@
+<section>
+    <div class="admin-login">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="login">
+                        <h1>LOGIN</h1>
+                        <h2>(Administrator)</h2>
+                        <p *ngIf="error">{{error}}</p>
+                        <form [formGroup]="loginForm" (ngSubmit)="login()">
+                            <input formControlName="email" placeholder="Email Address">
+                            <small *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched">
+                                incorrect email address !
+                            </small>
+                            <input type="password" formControlName="password" placeholder="Password">
+                            <small *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched">
+                                must contain minimum 4 characters !
+                            </small>
+                            <button type="submit">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
