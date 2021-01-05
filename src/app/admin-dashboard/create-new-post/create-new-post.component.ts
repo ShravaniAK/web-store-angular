@@ -16,6 +16,8 @@ export class CreateNewPostComponent implements OnInit {
   createPostForm = new FormGroup({
     url: new FormControl('', [Validators.required]),
     title: new FormControl('', [Validators.required]),
+    author: new FormControl('', [Validators.required]),
+    date: new FormControl('', [Validators.required]),
     description: new FormControl('', [Validators.required]),
     featuredImg: new FormControl('', [Validators.required]),
     postCode: new FormControl('', [Validators.required]),

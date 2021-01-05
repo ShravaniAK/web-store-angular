@@ -9,8 +9,8 @@ export class BlogService {
 
   constructor(private http: HttpClient) { }
   signInUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${config.apiKey}`;
-  getUrl = 'https://web-store-c3888-default-rtdb.firebaseio.com/hellogroup.json';
-  putUrl = 'https://web-store-c3888-default-rtdb.firebaseio.com/hellogroup.json?auth=';
+  getUrl = 'https://web-store-c3888-default-rtdb.firebaseio.com/blogs.json';
+  putUrl = 'https://web-store-c3888-default-rtdb.firebaseio.com/blogs.json?auth=';
 
   private header = new HttpHeaders({
     "Content-Type": "application/json",
@@ -36,5 +36,8 @@ export class BlogService {
     return this.http.put<any>(this.putUrl + token, res, { headers: this.header })
   }
 
-  
+  fetchPost(){
+    return this.http.get<any>(this.getUrl);
+  }
+
 }

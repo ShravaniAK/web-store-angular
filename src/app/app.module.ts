@@ -24,6 +24,9 @@ import { WeDesignComponent } from './home/we-design/we-design.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { CreateNewPostComponent } from './admin-dashboard/create-new-post/create-new-post.component';
+import { BlogPageComponent } from './blog-page/blog-page.component';
+import { ShowBlogsComponent } from './blog-page/show-blogs/show-blogs.component';
+import { BlogsFeaturedThemeComponent } from './blog-page/blogs-featured-theme/blogs-featured-theme.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,10 @@ import { CreateNewPostComponent } from './admin-dashboard/create-new-post/create
     WeDesignComponent,
     AdminLoginComponent,
     AdminDashboardComponent,
-    CreateNewPostComponent
+    CreateNewPostComponent,
+    BlogPageComponent,
+    ShowBlogsComponent,
+    BlogsFeaturedThemeComponent
   ],
   imports: [
     BrowserModule,

@@ -15,25 +15,33 @@
                         <form [formGroup]="createPostForm" (ngSubmit)="createPost()">
                             <input formControlName="url" placeholder="Post Url">
                             <small *ngIf="!createPostForm.get('url').valid && createPostForm.get('url').touched">
-                                incorrect email address !
+                                url email address !
                             </small>
                             <input formControlName="title" placeholder="Post Title">
                             <small *ngIf="!createPostForm.get('title').valid && createPostForm.get('title').touched">
                                 title can't be empty !
                             </small>
+                            <input formControlName="author" placeholder="Post Author">
+                            <small *ngIf="!createPostForm.get('author').valid && createPostForm.get('author').touched">
+                                author can't be empty !
+                            </small>
+                            <input formControlName="date" placeholder="Post Date">
+                            <small *ngIf="!createPostForm.get('date').valid && createPostForm.get('date').touched">
+                                date can't be empty !
+                            </small>
                             <input formControlName="description" placeholder="Post Description">
                             <small *ngIf="!createPostForm.get('description').valid && createPostForm.get('description').touched">
-                                title can't be empty !
+                                description can't be empty !
                             </small>
                             <input formControlName="featuredImg" placeholder="Post Featured Image Url">
                             <small *ngIf="!createPostForm.get('featuredImg').valid && createPostForm.get('featuredImg').touched">
-                                title can't be empty !
+                                featured image url can't be empty !
                             </small>
                             <textarea formControlName="postCode" placeholder="Post Code"></textarea>
                             <small *ngIf="!createPostForm.get('postCode').valid && createPostForm.get('postCode').touched">
-                                title can't be empty !
+                                post code can't be empty !
                             </small>
-                            <button type="submit">LOGIN</button>
+                            <button type="submit">PUBLISH</button>
                         </form>
                     </div>
                 </div>

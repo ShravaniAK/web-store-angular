@@ -1,0 +1,44 @@
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* text-align: justify; */
+    color: rgb(32, 32, 32);
+}
+h3:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.item{
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+a{
+    text-decoration: none;
+}
+small{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+p{
+    letter-spacing: 1px;
+}
+.item-text{
+    padding: 15px;
+}
+.item-image{
+    width: 100%;
+    padding-top: 60%; /* 1:1 Aspect Ratio */
+    position: relative; 
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.image-section{
+    border: none;
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
