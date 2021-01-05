@@ -6,6 +6,11 @@
                     <div class="login">
                         <h1>LOGIN</h1>
                         <h2>(Administrator)</h2>
+                        <div class="text-center" *ngIf="spinner==true">
+                            <div class="spinner-border" role="status">
+                              <span class="sr-only">Loading...</span>
+                            </div>
+                          </div>
                         <p *ngIf="error">{{error}}</p>
                         <form [formGroup]="loginForm" (ngSubmit)="login()">
                             <input formControlName="email" placeholder="Email Address">

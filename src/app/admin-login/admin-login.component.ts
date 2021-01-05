@@ -22,10 +22,13 @@ export class AdminLoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  error;
-
+  error = false;
+  spinner : boolean = false;
+  
   login(){
     if(this.loginForm.valid){
+      this.spinner = true;
+      this.error = false;
         console.log(this.loginForm.value);
         let email = this.loginForm.value.email;
         let password = this.loginForm.value.password;
@@ -34,9 +37,12 @@ export class AdminLoginComponent implements OnInit {
           (res)=>{
             console.log(res);
             localStorage.setItem("webstore-admin-token",res.idToken);
+            this.spinner = false;
             this.router.navigate(["/admin/dashboard"]);
+
           },(err)=>{
             console.log(err);
+            this.spinner = false;
             this.error = err.error.error.message;
         });
     }

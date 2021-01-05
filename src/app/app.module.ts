@@ -22,6 +22,8 @@ import { StepsComponent } from './home/steps/steps.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { WeDesignComponent } from './home/we-design/we-design.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { CreateNewPostComponent } from './admin-dashboard/create-new-post/create-new-post.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     StepsComponent,
     ContactPageComponent,
     WeDesignComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    AdminDashboardComponent,
+    CreateNewPostComponent
   ],
   imports: [
     BrowserModule,

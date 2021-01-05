@@ -1,0 +1,20 @@
+.dashboard
+{
+    height: 500px;
+    display: flex;
+}
+.dashboard .options{
+    flex-basis: 20%;
+    padding: 15px;
+    background-color: gray;
+}
+.dashboard .outlet{
+    flex-basis: 80%;
+}
+a{
+    display: block;
+    cursor: pointer;
+    margin-bottom: 6px;
+    border-bottom: 1px solid black;
+    padding: 5px 0px;
+}

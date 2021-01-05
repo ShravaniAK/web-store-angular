@@ -1,0 +1,14 @@
+<section>
+    <div class="dashboard">
+        <div class="options">
+            <a >Manage Existing Post</a>
+            <a  routerLink = "create-new-post">Create New Post</a>
+            <a  >change Password</a>
+            <a (click)="logout()">Logout</a>
+
+        </div>
+        <div class="outlet">
+        <router-outlet></router-outlet>
+    </div>
+    </div>
+</section>

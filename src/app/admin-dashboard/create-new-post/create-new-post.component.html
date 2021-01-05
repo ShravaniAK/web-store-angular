@@ -1,0 +1,43 @@
+<section>
+    <div class="create-new-post">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="create-post">
+                        <h1>Create new post</h1>
+                        <h2>(Administrator)</h2>
+                        <div class="text-center" *ngIf="spinner==true">
+                            <div class="spinner-border" role="status">
+                              <span class="sr-only">Loading...</span>
+                            </div>
+                          </div>
+                        <p *ngIf="error">{{error}}</p>
+                        <form [formGroup]="createPostForm" (ngSubmit)="createPost()">
+                            <input formControlName="url" placeholder="Post Url">
+                            <small *ngIf="!createPostForm.get('url').valid && createPostForm.get('url').touched">
+                                incorrect email address !
+                            </small>
+                            <input formControlName="title" placeholder="Post Title">
+                            <small *ngIf="!createPostForm.get('title').valid && createPostForm.get('title').touched">
+                                title can't be empty !
+                            </small>
+                            <input formControlName="description" placeholder="Post Description">
+                            <small *ngIf="!createPostForm.get('description').valid && createPostForm.get('description').touched">
+                                title can't be empty !
+                            </small>
+                            <input formControlName="featuredImg" placeholder="Post Featured Image Url">
+                            <small *ngIf="!createPostForm.get('featuredImg').valid && createPostForm.get('featuredImg').touched">
+                                title can't be empty !
+                            </small>
+                            <textarea formControlName="postCode" placeholder="Post Code"></textarea>
+                            <small *ngIf="!createPostForm.get('postCode').valid && createPostForm.get('postCode').touched">
+                                title can't be empty !
+                            </small>
+                            <button type="submit">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
