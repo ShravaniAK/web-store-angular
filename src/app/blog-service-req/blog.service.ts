@@ -40,4 +40,9 @@ export class BlogService {
     return this.http.get<any>(this.getUrl);
   }
 
+
+  fetchSinglePost(id){
+    let fetchUrl = `https://web-store-c3888-default-rtdb.firebaseio.com/blogs/${id}.json`;
+    return this.http.get<any>(fetchUrl);
+  }
 }

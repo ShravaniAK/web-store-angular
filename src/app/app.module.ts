@@ -6,6 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -27,6 +30,7 @@ import { CreateNewPostComponent } from './admin-dashboard/create-new-post/create
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { ShowBlogsComponent } from './blog-page/show-blogs/show-blogs.component';
 import { BlogsFeaturedThemeComponent } from './blog-page/blogs-featured-theme/blogs-featured-theme.component';
+import { BlogSinglePostPageComponent } from './blog-single-post-page/blog-single-post-page.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +53,8 @@ import { BlogsFeaturedThemeComponent } from './blog-page/blogs-featured-theme/bl
     CreateNewPostComponent,
     BlogPageComponent,
     ShowBlogsComponent,
-    BlogsFeaturedThemeComponent
+    BlogsFeaturedThemeComponent,
+    BlogSinglePostPageComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +62,9 @@ import { BlogsFeaturedThemeComponent } from './blog-page/blogs-featured-theme/bl
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSkeletonLoaderModule.forRoot(),
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

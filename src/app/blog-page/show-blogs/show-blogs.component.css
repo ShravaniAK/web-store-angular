@@ -28,17 +28,34 @@ p{
 }
 .item-image{
     width: 100%;
-    padding-top: 60%; /* 1:1 Aspect Ratio */
+    padding-top: 60%; /* 1:6 Aspect Ratio */
     position: relative; 
     border: none;
     overflow: hidden;
     cursor: pointer;
+   
+}
+.image-bg{  
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+     bottom: 0;
+     right: 0;
+     z-index: 4;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
 }
 .image-section{
     border: none;
     position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+    top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     z-index: 5;
 }

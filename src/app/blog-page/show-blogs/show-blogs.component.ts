@@ -11,12 +11,14 @@ export class ShowBlogsComponent implements OnInit {
   constructor(private blogService : BlogService) { }
 
   blogPost;
+  loader = ["","","",""];
 
   ngOnInit(): void {
     this.blogService.fetchPost().subscribe(
       (res)=>{
         console.log(res);
         this.blogPost = res;
+        this.loader=[];
       },
       (err)=>{
         console.log(err);

@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --theme-gradient : linear-gradient(to right top, #8b49f1, #8147ea, #7744e4, #6c42dd, #623fd6, #583acb, #4e35c1, #4430b6, #3828a6, #2d2095, #201986, #131176);
+}
+
+.single-post p{
+    font-size: 15px ;
+    color: rgb(34, 34, 34);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.single-post h2{
+    font-size: 22px ;
+    color: rgb(34, 34, 34);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.single-post h3{
+    font-size: 20px ;
+    color: rgb(34, 34, 34);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.single-post a{
+    text-decoration:none;
+    color: rgb(47, 47, 243);
+    cursor: pointer;
+}
+.single-post ul{
+    padding-left: 20px;
+}

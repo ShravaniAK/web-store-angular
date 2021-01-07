@@ -1,0 +1,96 @@
+<section>
+    <div class="single-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <div *ngIf="singlePost">
+                       <div>
+                            <h1>{{singlePost.title}}</h1>
+                            <small>{{singlePost.author}}, Last Updated {{singlePost.date}}</small>
+                            <div class="item-image">
+                                <div class="image-section">
+                                    <img  src="{{singlePost.featuredImg}}"
+                                        width="100%" height="100%" alt="">
+                                </div>
+                                <div class="image-bg"></div>
+                            </div>
+                            <div [innerHtml]="singlePost.postCode">
+                                
+                            </div>
+                            <div class="share-buttons">
+                    
+                               
+                               
+                                <a href="https://www.facebook.com/sharer.php?u={{location}}">
+                                    <div class="button-main">
+                                        <div class="icon" style="background-color: #4965a0;"><i class="fa fa-facebook-f "></i></div>
+                                        <div class="text" style="background-color: #3b5999;">
+                                            <p>Facebook</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="https://web.whatsapp.com/send?text={{singlePost.title}} | {{location}}">
+                                    <div class="button-main">
+                                        <div class="icon" style="background-color:#4dc05c;"><i class="fa fa-whatsapp"></i></div>
+                                        <div class="text" style="background-color: #47d459;">
+                                            <p>Whatsapp</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <a href="">
+                                    <div class="button-main">
+                                        <div class="icon" style="background-color: #12b2ef;"><i class="fa fa-twitter "></i></div>
+                                        <div class="text" style="background-color: #00acee;">
+                                            <p>Twitter</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+
+
+
+                            </div>
+                       </div>
+                    </div>
+
+
+                    <div *ngIf="loader==true">
+                        <div>
+                            <ngx-skeleton-loader  [theme]="{ 'border-radius': '0', height: '30px', 'background-color': 'rgb(199, 196, 196)' }">
+                            </ngx-skeleton-loader>
+                            <ngx-skeleton-loader  [theme]="{ 'border-radius': '0', height: '30px', 'width':'90%', 'background-color': 'rgb(199, 196, 196)' }">
+                            </ngx-skeleton-loader>
+                            <ngx-skeleton-loader  [theme]="{ 'border-radius': '0', height: '30px', 'background-color': 'rgb(199, 196, 196)' }">
+                            </ngx-skeleton-loader>
+                            <ngx-skeleton-loader  [theme]="{ 'border-radius': '0', height: '20px', 'width':'60%' ,'background-color': 'rgb(199, 196, 196)' }">
+                            </ngx-skeleton-loader>
+                             <div class="item-image">
+                                 <div class="image-section">
+                                    <ngx-skeleton-loader animation="progress" [theme]="{ 
+                                        'border-radius': '5px',
+                                        height: '100%',
+                                        'background-color': 'gray'
+                                      }"></ngx-skeleton-loader>
+                                 </div>
+                    
+                             </div>
+                             <div >
+                                <ngx-skeleton-loader count="2" [theme]="{ 'border-radius': '0', height: '20px', 'background-color': 'rgb(199, 196, 196)' }">
+                                </ngx-skeleton-loader>
+                                <ngx-skeleton-loader  [theme]="{ 'border-radius': '0', height: '20px', 'width':'90%', 'background-color': 'rgb(199, 196, 196)' }">
+                                </ngx-skeleton-loader>
+                                <ngx-skeleton-loader count="2" [theme]="{ 'border-radius': '0', height: '20px', 'background-color': 'rgb(199, 196, 196)' }">
+                                </ngx-skeleton-loader>
+                                <ngx-skeleton-loader  [theme]="{ 'border-radius': '0', height: '20px', 'width':'90%', 'background-color': 'rgb(199, 196, 196)' }">
+                                </ngx-skeleton-loader>
+                             </div>
+                        </div>
+                     </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

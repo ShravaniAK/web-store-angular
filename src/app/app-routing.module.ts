@@ -6,6 +6,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { CreateNewPostComponent } from './admin-dashboard/create-new-post/create-new-post.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
+import { BlogSinglePostPageComponent } from './blog-single-post-page/blog-single-post-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
       { path: "create-new-post", component: CreateNewPostComponent }
     ]
   },
-  { path:'blog', component : BlogPageComponent }
+  { path:'blog', component : BlogPageComponent },
+  { path:'blog/:id', component : BlogSinglePostPageComponent }
 ];
 
 
