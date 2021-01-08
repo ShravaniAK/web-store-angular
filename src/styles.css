@@ -6,26 +6,26 @@
 .single-post p{
     font-size: 15px ;
     color: rgb(34, 34, 34);
-    letter-spacing: 1px;
-    font-weight: 600;
+    letter-spacing: .5px;
 }
 .single-post h2{
     font-size: 22px ;
     color: rgb(34, 34, 34);
-    letter-spacing: 1px;
-    font-weight: 700;
+    letter-spacing: .5px;
+    font-weight: 500;
 }
 .single-post h3{
     font-size: 20px ;
     color: rgb(34, 34, 34);
-    letter-spacing: 1px;
-    font-weight: 700;
+    letter-spacing: .5px;
+    font-weight: 500;
 }
 .single-post a{
     text-decoration:none;
-    color: rgb(47, 47, 243);
+    color: rgb(106, 106, 248);
     cursor: pointer;
 }
+
 .single-post ul{
     padding-left: 20px;
 }

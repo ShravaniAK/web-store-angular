@@ -2,15 +2,14 @@
     padding: 40px 0px;
 }
 .single-post h1{
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: capitalize;
-    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: .5px;
 }
 .single-post small{
-    font-size: 18px;
-    color: gray;
-    font-weight: 700;
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
     text-transform: capitalize;
 }
 
@@ -20,8 +19,8 @@
     position: relative; 
     border: none;
     overflow: hidden;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .image-bg{  
@@ -50,39 +49,52 @@
 }
 
 
+
+
+
 .share-buttons a{
     display: inline-block;
     margin-right: 10px;
+    outline: none;
 }
-.button-main{
+.share-buttons a:hover{
+    opacity: .7;
+}
+.share-buttons a:active{
+    transform: scale(.97);
+}
+.share-buttons .button-main{
     height:32px;
-    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
 }
-.icon{
+.share-buttons .icon{
     height: 32px;
     width: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.icon i{
+.share-buttons .icon i{
     font-size: 16px;
     padding:0;
     margin:0;
     color: white;
 }
-.text{
+.share-buttons .text{
     width:100px;
-    
     color: white;
-    /* width: auto; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.text p{
+.share-buttons .text p{
     padding: 0;
     margin:0;
     color: white;
+}
+@media only screen and (max-width:600px){
+    .share-buttons .text{
+        display: none;
+    }
 }

@@ -4,6 +4,7 @@ h3{
     letter-spacing: 1px;
     /* text-align: justify; */
     color: rgb(32, 32, 32);
+    outline: none;
 }
 h3:hover{
     color: blue;
@@ -15,6 +16,7 @@ h3:hover{
 }
 a{
     text-decoration: none;
+    outline: none;
 }
 small{
     font-weight: 600;
@@ -58,4 +60,7 @@ p{
      bottom: 0;
      right: 0;
      z-index: 5;
+}
+img{
+    outline: none;
 }

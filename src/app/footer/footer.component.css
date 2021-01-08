@@ -5,7 +5,10 @@
 }
 .footer h3{
     color: rgb(238, 236, 236);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .footer h2{
     color: rgb(238, 236, 236);
@@ -22,9 +25,11 @@
 .copyright{
     background-color: rgb(27, 27, 27);
     padding:10px 0px;
+    /* border-bottom: 1px solid black; */
 }
 .copyright p{
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 1px;
     color: rgb(238, 236, 236);
     margin: 0;
     font-size: 14px;
@@ -37,6 +42,7 @@
     margin-bottom: 10px;
     font-weight:600;
     transition: all .3s ease;
+    outline: none;
 }
 .points a:hover{
     color: #4cc2c0;
@@ -51,7 +57,7 @@
 }
 
 .des{
-    padding:10px 15px 0px 15px;
-    background-color: rgb(26, 26, 26);
+    /* padding:10px 15px 0px 15px; */
+    /* background-color: rgb(26, 26, 26); */
     margin-bottom: 10px;
 }

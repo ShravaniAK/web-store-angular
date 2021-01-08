@@ -2,11 +2,52 @@
     <div class="single-post">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-xs-12">
+                <div class="col-md-7 col-xs-12">
                     <div *ngIf="singlePost">
                        <div>
                             <h1>{{singlePost.title}}</h1>
-                            <small>{{singlePost.author}}, Last Updated {{singlePost.date}}</small>
+                            <div class="mb-2">
+                                <small>{{singlePost.author}}, Last Updated {{singlePost.date}}</small>
+                            </div>
+                            <div class="share-buttons">
+                                <a>
+                                    <div class="button-main">
+                                        <div class="icon" style="background-color: white; border: 1px solid rgb(235, 230, 230); width:45px;"><i class="fa fa-share-alt text-dark" ></i></div>
+                                    </div>
+                                </a>
+                               
+                               
+                                <a href="https://www.facebook.com/sharer.php?u={{location}}">
+                                    <div class="button-main">
+                                        <div class="icon" style="background-color: #4965a0;"><i class="fa fa-facebook-f "></i></div>
+                                        <div class="text" style="background-color: #3b5999;">
+                                            <p>Facebook</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="https://web.whatsapp.com/send?text={{singlePost.title}} | {{location}}">
+                                    <div class="button-main">
+                                        <div class="icon" style="background-color:#4dc05c;"><i class="fa fa-whatsapp"></i></div>
+                                        <div class="text" style="background-color: #47d459;">
+                                            <p>Whatsapp</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <a href="">
+                                    <div class="button-main">
+                                        <div class="icon" style="background-color: #12b2ef;"><i class="fa fa-twitter "></i></div>
+                                        <div class="text" style="background-color: #00acee;">
+                                            <p>Twitter</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+
+
+
+                            </div>
                             <div class="item-image">
                                 <div class="image-section">
                                     <img  src="{{singlePost.featuredImg}}"
@@ -17,8 +58,16 @@
                             <div [innerHtml]="singlePost.postCode">
                                 
                             </div>
+
+
+
+
                             <div class="share-buttons">
-                    
+                                <a>
+                                    <div class="button-main">
+                                        <div class="icon" style="background-color: white; border: 1px solid rgb(235, 230, 230); width:45px;"><i class="fa fa-share-alt text-dark" ></i></div>
+                                    </div>
+                                </a>
                                
                                
                                 <a href="https://www.facebook.com/sharer.php?u={{location}}">
