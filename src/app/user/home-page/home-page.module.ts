@@ -11,7 +11,8 @@ import { RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { QuickQuoteFormComponent } from './quick-quote-form/quick-quote-form.component';
-import { ContactFormComponent } from '../contact-page/contact-form/contact-form.component';
+import { SharedModule } from '../shared/shared.module';
+
 
 
 
@@ -25,17 +26,16 @@ import { ContactFormComponent } from '../contact-page/contact-form/contact-form.
     StepsComponent,
     OurPortfolioComponent,
     BenifitsComponent,
-    ContactFormComponent,
     QuickQuoteFormComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ],
   exports: [
-    // ContactFormComponent,
   ]
 })
 export class HomePageModule { }
