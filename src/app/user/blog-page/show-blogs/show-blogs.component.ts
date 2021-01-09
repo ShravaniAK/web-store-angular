@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogService } from 'src/app/blog-service-req/blog.service';
+import { BlogPostService } from '../../blog-post.service';
+
 
 @Component({
   selector: 'app-show-blogs',
@@ -8,7 +9,7 @@ import { BlogService } from 'src/app/blog-service-req/blog.service';
 })
 export class ShowBlogsComponent implements OnInit {
 
-  constructor(private blogService : BlogService) { }
+  constructor(private blogService : BlogPostService) { }
 
   blogPost;
   loader = ["","","",""];

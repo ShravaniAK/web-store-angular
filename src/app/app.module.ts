@@ -9,52 +9,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { OurServicesComponent } from './home/our-services/our-services.component';
-import { OurPortfolioComponent } from './home/our-portfolio/our-portfolio.component';
-import { HowWeAreComponent } from './home/how-we-are/how-we-are.component';
-import { QuickQuoteFormComponent } from './home/quick-quote-form/quick-quote-form.component';
-import { FeaturedComponent } from './home/featured/featured.component';
-import { BenifitsComponent } from './home/benifits/benifits.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
-import { StepsComponent } from './home/steps/steps.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
-import { WeDesignComponent } from './home/we-design/we-design.component';
-import { AdminLoginComponent } from './admin-login/admin-login.component';
-import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
-import { CreateNewPostComponent } from './admin-dashboard/create-new-post/create-new-post.component';
-import { BlogPageComponent } from './blog-page/blog-page.component';
-import { ShowBlogsComponent } from './blog-page/show-blogs/show-blogs.component';
-import { BlogsFeaturedThemeComponent } from './blog-page/blogs-featured-theme/blogs-featured-theme.component';
-import { BlogSinglePostPageComponent } from './blog-single-post-page/blog-single-post-page.component';
+
+
+import { AppComponent } from './app.component';
+import { FooterComponent } from './user/footer/footer.component';
+import { HeaderComponent } from './user/header/header.component';
+
+
+import { AdminLoginModule } from './admin/admin-login/admin-login.module';
+import { AdminDashboardModule } from './admin/admin-dashboard/admin-dashboard.module';
+import { HomePageModule } from './user/home-page/home-page.module';
+import { BlogPageModule } from './user/blog-page/blog-page.module';
+import { BlogSinglePostPageModule } from './user/blog-single-post-page/blog-single-post-page.module';
+import { ContactPageModule } from './user/contact-page/contact-page.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
+    AppComponent,   
     HeaderComponent,
-    FooterComponent,
-    OurServicesComponent,
-    OurPortfolioComponent,
-    HowWeAreComponent,
-    QuickQuoteFormComponent,
-    FeaturedComponent,
-    BenifitsComponent,
-    ContactFormComponent,
-    StepsComponent,
-    ContactPageComponent,
-    WeDesignComponent,
-    AdminLoginComponent,
-    AdminDashboardComponent,
-    CreateNewPostComponent,
-    BlogPageComponent,
-    ShowBlogsComponent,
-    BlogsFeaturedThemeComponent,
-    BlogSinglePostPageComponent
+    FooterComponent, 
   ],
   imports: [
     BrowserModule,
@@ -64,7 +38,13 @@ import { BlogSinglePostPageComponent } from './blog-single-post-page/blog-single
     FormsModule,
     HttpClientModule,
     NgxSkeletonLoaderModule.forRoot(),
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    AdminLoginModule,
+    AdminDashboardModule,
+    HomePageModule,
+    BlogPageModule,
+    BlogSinglePostPageModule,
+    ContactPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

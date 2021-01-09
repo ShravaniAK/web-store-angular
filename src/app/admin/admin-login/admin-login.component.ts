@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { BlogService } from '../blog-service-req/blog.service';
+import { AdminLoginService } from '../admin-login.service';
+
 
 @Component({
   selector: 'app-admin-login',
@@ -11,7 +12,7 @@ import { BlogService } from '../blog-service-req/blog.service';
 })
 export class AdminLoginComponent implements OnInit {
 
-  constructor(private blogService : BlogService, private router : Router) { }
+  constructor(private loginService : AdminLoginService, private router : Router) { }
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -33,7 +34,7 @@ export class AdminLoginComponent implements OnInit {
         let email = this.loginForm.value.email;
         let password = this.loginForm.value.password;
         this.loginForm.reset();
-        this.blogService.login(email, password).subscribe(
+        this.loginService.login(email, password).subscribe(
           (res)=>{
             console.log(res);
             localStorage.setItem("webstore-admin-token",res.idToken);

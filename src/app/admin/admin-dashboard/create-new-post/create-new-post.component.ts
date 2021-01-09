@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
-import { BlogService } from 'src/app/blog-service-req/blog.service';
+import { AdminDashboardService } from '../../admin-dashboard.service';
 
 @Component({
   selector: 'app-create-new-post',
@@ -11,7 +11,7 @@ import { BlogService } from 'src/app/blog-service-req/blog.service';
 })
 export class CreateNewPostComponent implements OnInit {
 
-  constructor(private blogService: BlogService) { }
+  constructor(private adminDashboardService: AdminDashboardService) { }
 
   createPostForm = new FormGroup({
     url: new FormControl('', [Validators.required]),
@@ -37,7 +37,7 @@ export class CreateNewPostComponent implements OnInit {
     if (this.createPostForm.valid) {
       this.spinner = true;
       this.error = false;
-      this.blogService.createPost(this.createPostForm.value).subscribe(
+      this.adminDashboardService.createPost(this.createPostForm.value).subscribe(
         (res) => {
           // console.log(res);
           let response = res;
@@ -46,7 +46,7 @@ export class CreateNewPostComponent implements OnInit {
           };
           Object.assign(response, newData);
           // console.log(newData);
-          this.blogService.savePost(response).subscribe(
+          this.adminDashboardService.savePost(response).subscribe(
             (res) => {
               // console.log(res);
               this.createPostForm.reset();
