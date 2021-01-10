@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { HeaderService } from './header.service';
 
 @Component({
   selector: 'app-header',
@@ -45,8 +46,15 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class HeaderComponent implements OnInit {
+  headerDetail : boolean  = true; 
 
-  constructor() { }
+  constructor(private headerDetailService : HeaderService) {
+      this.headerDetailService.headerDetail.subscribe(
+        res => {
+          this.headerDetail = res;
+        }
+      );
+   }
 
   ngOnInit(): void {
   }

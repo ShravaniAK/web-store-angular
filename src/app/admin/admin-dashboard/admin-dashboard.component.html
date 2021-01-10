@@ -1,14 +1,55 @@
-<section>
+<section class="dashboard-right">
     <div class="dashboard">
-        <div class="options">
-            <a >Manage Existing Post</a>
-            <a  routerLink = "create-new-post">Create New Post</a>
-            <a  >change Password</a>
-            <a (click)="logout()">Logout</a>
 
+        <!--  header -->
+        <div class="dashboard-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="dashboard-header-flex">
+                            <div class="tgl-icn" (click)="toggle()">
+                                <button id="tgl-btn" class="">
+                                    <div class="line"></div>
+                                </button>
+                            </div>
+                            <div class="tag">
+                                <div routerLink="/home" class="circle-profile">
+                                    <p style="color: white;">DASHBOARD</p>
+                                </div>
+                            </div>
+
+                            <div class="link-container">
+
+                                <div class="nav-links">
+
+                                    <div>
+                                        <p routerLink="contact" routerLinkActive="active-link"
+                                            [routerLinkActiveOptions]="{exact: true}">ADMIN</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="outlet">
+
+
         <router-outlet></router-outlet>
+
     </div>
+</section>
+
+<div class="shadow" [ngClass]="getSomeClass()" (click)="toggle()">
+
+</div>
+<section class="dashboard-left" [ngClass]="getSomeClass()">
+    <div class="container-fluid">
+        <a routerLink="">Home - Web Store</a>
+        <a routerLink="manage-post">Manage Existing Post</a>
+        <a routerLink="create-new-post">Create New Post</a>
+        <a routerLink="change-password">change Password</a>
+        <a (click)="logout()">Logout</a>
     </div>
 </section>

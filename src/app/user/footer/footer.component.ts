@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FooterService } from './footer.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  footerDetail :boolean = true;
+  constructor(private footerDetailService : FooterService) { 
+    this.footerDetailService.footerDetail.subscribe(
+      res => {
+        this.footerDetail = res;
+      }
+    );
 
+  }
   ngOnInit(): void {
   }
 

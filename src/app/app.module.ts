@@ -6,8 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
-import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+// import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+// import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -23,6 +23,7 @@ import { HomePageModule } from './user/home-page/home-page.module';
 import { BlogPageModule } from './user/blog-page/blog-page.module';
 import { BlogSinglePostPageModule } from './user/blog-single-post-page/blog-single-post-page.module';
 import { ContactPageModule } from './user/contact-page/contact-page.module';
+import { AboutPageModule } from './user/about-page/about-page.module';
 
 @NgModule({
   declarations: [
@@ -37,14 +38,15 @@ import { ContactPageModule } from './user/contact-page/contact-page.module';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgxSkeletonLoaderModule.forRoot(),
-    InfiniteScrollModule,
+    // NgxSkeletonLoaderModule.forRoot(),
+    // InfiniteScrollModule,
     AdminLoginModule,
     AdminDashboardModule,
     HomePageModule,
     BlogPageModule,
     BlogSinglePostPageModule,
-    ContactPageModule
+    ContactPageModule,
+    AboutPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

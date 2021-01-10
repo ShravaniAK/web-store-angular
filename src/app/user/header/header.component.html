@@ -1,5 +1,5 @@
 <!-- side nav for mobile start-->
-<div [@mobileNav]="tglState ? 'invisible' : 'visible'" class="side-nav-mobile nav-mobile-hide" id="mob-nav">
+<div [@mobileNav]="tglState ? 'invisible' : 'visible'" class="side-nav-mobile nav-mobile-hide" id="mob-nav" *ngIf="headerDetail">
 
     <div class="px-3 py-3 sdnav">
 
@@ -63,7 +63,7 @@
 
 
 <!-- side nav mobile black background  -->
-<div [@mobileBlackBackground]="tglState ? 'invisible' : 'visible'" class="" id="mob-nav-back" (click)="toggle()"></div>
+<div *ngIf="headerDetail" [@mobileBlackBackground]="tglState ? 'invisible' : 'visible'" class="" id="mob-nav-back" (click)="toggle()"></div>
 
 
 
@@ -75,7 +75,7 @@
 
 
 <!--  header -->
-<div class="dashboard-header">
+<div class="dashboard-header" *ngIf="headerDetail">
     <div class="container">
         <div class="row">
             <div class="col">
