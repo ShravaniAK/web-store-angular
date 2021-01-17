@@ -1,23 +1,16 @@
 .services{
     padding-top :40px;
     padding-bottom: 40px;
-    /* background-color: #f0f0f1; */
-    background-color: white;
+    background-color: var(--background-light);
 }
-.services h1{
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    text-align: center;
-    color:#333333;
-    font-weight: 700;
-    font-size: 25px;
-    letter-spacing: 3px;
+.services h2{
+    color: var(--text-dark-high);
 }
 .item{
    
     border: 1px solid #ddd;
     padding: 30px 30px 15px 30px;
-    background-color: white;
+    background-color: var(--background-white);
     transition: all .3s ease;
     position: relative;
 }
@@ -25,26 +18,20 @@
     position: absolute;
     top:-10px;
     left:-1px;
-    background-color: white;
     padding-right: 5px;
+    background-color: var(--background-light);
+    z-index: 1;
 }
 .item h4{
     font-weight: 700;
     margin-bottom: 15px;
-    letter-spacing: 1px;
-    font-size: 16px;
     text-transform: uppercase;
-    color: #333;
+    color: var(--text-dark-low);
     text-align: right;
 }
 .item p{
-    margin-bottom: 10px;
-    font-size: 15px;
-    color: #555;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    line-height: 24px;
     text-align: right;
+    color: var(--text-dark-low);
 }
 
 .item:hover{
@@ -52,3 +39,9 @@
      /* box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35); */
      border: 1px solid #e2574c;
 }
+i{
+    background-color: var(--background-light);
+}
+
+
+

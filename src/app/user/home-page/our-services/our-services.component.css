@@ -1,22 +1,15 @@
 .services{
     padding-top :40px;
     padding-bottom: 40px;
-    /* background-color: #f0f0f1; */
-    background-color: #222222;
+    background-color: var(--background-dark);
 }
-.services h1{
-    text-transform: uppercase;
-    text-align: center;
-    color:white;
-    font-weight: 700;
-    font-size: 25px;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
+.services h2{
+    color: var(--text-light-high);
 }
 .item{
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
     padding: 10px 20px;
-    background-color: white;
+    background-color: var(--background-white);
     transition: all .3s ease;
 }
 .item .logo{
@@ -28,19 +21,16 @@
     justify-content: center;
 }
 .item h4{
-    font-weight: 700;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
-    font-size: 16px;
-    color:#333;
+   font-weight: 700;
+    color:var(--text-dark-high);
+}
+p{
+    text-align: center;
+    color: var(--text-light-high);
 }
 .item p{
-    margin-bottom: 5px;
-    font-size: 15px;
-    color: #555;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    line-height: 24px;
+    text-align: left;
+    color: var(--text-dark-low);
 }
 .item a{
     margin: 0;
@@ -51,22 +41,12 @@
     background: linear-gradient(to right top, #8b49f1, #8147ea, #7744e4, #6c42dd, #623fd6, #583acb, #4e35c1, #4430b6, #3828a6, #2d2095, #201986, #131176);
 }
 .item:hover a{
-    color: white;
+    color: var(--text-light-high);
 }
 .item:hover h4{
-    color: white;
+    color: var(--text-light-high);
 }
 .item:hover p{
-    color: white;
+    color: var(--text-light-high);
 }
 
-
-.tag{
-    font-size: 15px;
-    color: white;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    line-height: 24px;
-    text-align: center;
-    margin-bottom: 40px;
-}

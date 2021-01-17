@@ -1,0 +1,17 @@
+.steps{
+    background-color: #222222;
+    padding: 60px 0px;
+}
+.df{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}

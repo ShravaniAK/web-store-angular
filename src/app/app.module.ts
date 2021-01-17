@@ -24,6 +24,10 @@ import { BlogPageModule } from './user/blog-page/blog-page.module';
 import { BlogSinglePostPageModule } from './user/blog-single-post-page/blog-single-post-page.module';
 import { ContactPageModule } from './user/contact-page/contact-page.module';
 import { AboutPageModule } from './user/about-page/about-page.module';
+import { PricingPageModule } from './user/pricing-page/pricing-page.module';
+import { PrivacyPolicyPageModule } from './user/privacy-policy-page/privacy-policy-page.module';
+import { TermsAndConditionsPageModule } from './user/terms-and-conditions-page/terms-and-conditions-page.module';
+import { TestimonialPageModule } from './user/testimonial-page/testimonial-page.module';
 
 @NgModule({
   declarations: [
@@ -46,7 +50,11 @@ import { AboutPageModule } from './user/about-page/about-page.module';
     BlogPageModule,
     BlogSinglePostPageModule,
     ContactPageModule,
-    AboutPageModule
+    AboutPageModule,
+    PricingPageModule,
+    PrivacyPolicyPageModule,
+    TermsAndConditionsPageModule,
+    TestimonialPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

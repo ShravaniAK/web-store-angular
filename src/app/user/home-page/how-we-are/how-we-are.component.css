@@ -1,21 +1,14 @@
 .how-we-are{
-    background-color: white;
+    background-color: var(--background-white);
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.how-we-are h1{
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    text-align: center;
-    color:#333333;
-    font-weight: 700;
-    font-size: 25px;
-    letter-spacing: 3px;
+.how-we-are h2{
+    color: var(--text-dark-high);
 }
 .how-we-are p{
     text-align: justify;
-    color:black;
-    letter-spacing:1px;
+    color:var(--text-dark-low);
     margin-bottom: 40px;
-    font-weight: 400;
+    
 }

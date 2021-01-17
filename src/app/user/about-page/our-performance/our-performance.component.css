@@ -1,0 +1,13 @@
+.steps{
+    background-color: var(--background-light);
+    padding: 60px 0px;
+}
+.df{
+
+}
+h3{
+    color: var(--text-dark-high);
+}
+.steps p{
+   color: var(--text-dark-low);
+}

@@ -1,5 +1,5 @@
 .steps{
-    background-color: #222222;
+    background-color: var(--background-dark);
     padding: 60px 0px;
 }
 .df{
@@ -17,16 +17,12 @@
     border-radius: 50%;
     margin-bottom: 15px;
 }
-.circle h5{
-    font-size: 20px;
+.circle h3{
     font-weight: 700;
-    color: white;
+    color: var(--text-light-high);
     text-transform: uppercase;
 }
 .steps p{
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
+    color: var(--text-light-high);
     text-align: center;
-    letter-spacing: 1px;
 }

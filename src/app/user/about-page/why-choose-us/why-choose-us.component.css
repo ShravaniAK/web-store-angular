@@ -1,0 +1,12 @@
+.we-design{
+    background-color: var(--background-white);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.we-design h2{
+    color: var(--text-dark-high);
+}
+.we-design p{
+    text-align: justify;
+    color: var(--text-dark-low);
+}
