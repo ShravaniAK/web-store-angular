@@ -1,14 +1,14 @@
 .how-we-are{
-    background-color: var(--background-white);
+    background-color: var(--theme2-background);
     padding-top: 40px;
     padding-bottom: 40px;
 }
 .how-we-are h2{
-    color: var(--text-dark-high);
+    color: var(--theme2-text);
 }
 .how-we-are p{
     text-align: justify;
-    color:var(--text-dark-low);
+    color:var(--theme2-text);
     margin-bottom: 40px;
     
 }

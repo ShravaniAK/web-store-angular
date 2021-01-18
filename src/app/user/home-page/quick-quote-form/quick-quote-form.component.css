@@ -1,7 +1,7 @@
 .myform{
     max-width:400px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 30px 20px;
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
     border-radius: 5px;
     background-color: white;
@@ -18,14 +18,15 @@
 .myform p{
     text-align: center;
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .myform input{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border:none;
     border-bottom: 1px solid gray;
     outline:none;
+    padding: 5px;
 }
 .myform button{
     background-color: #0043c6;
@@ -35,5 +36,6 @@
     border-radius: 4px;
     padding:6px 15px;   
     margin:0 auto;
+    margin-top: 10px;
     display: block;
 }

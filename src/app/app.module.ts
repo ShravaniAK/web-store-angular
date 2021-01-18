@@ -28,6 +28,8 @@ import { PricingPageModule } from './user/pricing-page/pricing-page.module';
 import { PrivacyPolicyPageModule } from './user/privacy-policy-page/privacy-policy-page.module';
 import { TermsAndConditionsPageModule } from './user/terms-and-conditions-page/terms-and-conditions-page.module';
 import { TestimonialPageModule } from './user/testimonial-page/testimonial-page.module';
+import { SearchEngineOptimizationPageModule } from './user/search-engine-optimization-page/search-engine-optimization-page.module';
+import { SocialMediaMarketingPageModule } from './user/social-media-marketing-page/social-media-marketing-page.module';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { TestimonialPageModule } from './user/testimonial-page/testimonial-page.
     PricingPageModule,
     PrivacyPolicyPageModule,
     TermsAndConditionsPageModule,
-    TestimonialPageModule
+    TestimonialPageModule,
+    SearchEngineOptimizationPageModule,
+    SocialMediaMarketingPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

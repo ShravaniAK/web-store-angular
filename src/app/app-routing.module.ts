@@ -13,6 +13,8 @@ import { PricingPageComponent } from './user/pricing-page/pricing-page.component
 import { PrivacyPolicyPageComponent } from './user/privacy-policy-page/privacy-policy-page.component';
 import { TermsAndConditionsPageComponent } from './user/terms-and-conditions-page/terms-and-conditions-page.component';
 import { TestimonialPageComponent } from './user/testimonial-page/testimonial-page.component';
+import { SearchEngineOptimizationPageComponent } from './user/search-engine-optimization-page/search-engine-optimization-page.component';
+import { SocialMediaMarketingPageComponent } from './user/social-media-marketing-page/social-media-marketing-page.component';
 
 
 const routes: Routes = [
@@ -32,7 +34,9 @@ const routes: Routes = [
   { path:'pricing', component : PricingPageComponent },
   { path:'privacy-policy', component : PrivacyPolicyPageComponent },
   { path:'terms-and-conditions', component : TermsAndConditionsPageComponent },
-  { path:'testimonial', component : TestimonialPageComponent }
+  { path:'testimonial', component : TestimonialPageComponent },
+  { path:'search-engine-optimization', component : SearchEngineOptimizationPageComponent },
+  { path:'social-media-marketing', component : SocialMediaMarketingPageComponent }
 ];
 
 

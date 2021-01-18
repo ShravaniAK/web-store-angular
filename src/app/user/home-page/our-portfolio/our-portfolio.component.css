@@ -1,13 +1,13 @@
 .portfolio{
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: white;
+    background-color: var(--theme2-background);
 }
 .portfolio h1{
     text-transform: uppercase;
     margin-bottom: 40px;
     text-align: center;
-    color:#333333;
+    color:var(--theme2-text);
     font-weight: 700;
     font-size: 25px;
     letter-spacing: 3px;

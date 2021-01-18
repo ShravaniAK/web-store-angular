@@ -1,15 +1,15 @@
 .services{
     padding-top :40px;
     padding-bottom: 40px;
-    background-color: var(--background-dark);
+    background-color: var(--theme1-background);
 }
 .services h2{
-    color: var(--text-light-high);
+    color: var(--theme1-text);
 }
 .item{
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
     padding: 10px 20px;
-    background-color: var(--background-white);
+    background-color: var(--theme1-text);
     transition: all .3s ease;
 }
 .item .logo{
@@ -22,15 +22,15 @@
 }
 .item h4{
    font-weight: 700;
-    color:var(--text-dark-high);
+    color:var(--theme1-background);
 }
 p{
     text-align: center;
-    color: var(--text-light-high);
+    color: var(--theme1-text);
 }
 .item p{
     text-align: left;
-    color: var(--text-dark-low);
+    color: var(--theme1-background);
 }
 .item a{
     margin: 0;
@@ -41,12 +41,12 @@ p{
     background: linear-gradient(to right top, #8b49f1, #8147ea, #7744e4, #6c42dd, #623fd6, #583acb, #4e35c1, #4430b6, #3828a6, #2d2095, #201986, #131176);
 }
 .item:hover a{
-    color: var(--text-light-high);
+    color: var(--theme1-text);
 }
 .item:hover h4{
-    color: var(--text-light-high);
+    color: var(--theme1-text);
 }
 .item:hover p{
-    color: var(--text-light-high);
+    color: var(--theme1-text);
 }
 

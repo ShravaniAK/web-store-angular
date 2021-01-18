@@ -1,0 +1,25 @@
+.steps{
+    background-color: var(--theme1-background);
+    padding: 60px 0px;
+}
+.df{
+    width: 60px;
+    height: 60px;
+    margin: 5px auto;
+}
+h2{
+    color: var(--theme1-text);
+}
+
+h3{
+    color: rgb(61, 61, 61);
+    text-align: center;
+}
+.steps p{
+   color: rgb(61, 61, 61);
+   text-align: center;
+}
+.square{
+    background-color: white;
+    padding: 15px;
+}

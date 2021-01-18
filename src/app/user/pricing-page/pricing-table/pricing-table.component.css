@@ -1,9 +1,11 @@
 
 #one{
     padding: 40px 0px;
+    background-color: var(--theme2-background);
     
   }
   .pricing-table .card {
+    background-color: white;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;

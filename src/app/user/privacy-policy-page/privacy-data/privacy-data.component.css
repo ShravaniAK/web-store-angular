@@ -1,7 +1,7 @@
 .privacy{
     padding: 30px 0px;
-    background-color: var(--background-light);
+    background-color: var(--theme2-background);
 }
 p{
-    color: var(--text-dark-low);
+    color: var(--theme2-text);
 }

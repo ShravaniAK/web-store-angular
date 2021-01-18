@@ -1,15 +1,15 @@
 .terms-and-conditions{
     padding: 30px 0px;
-    background-color: var(--background-light);
+    background-color: var(--theme2-background);
 }
 p{
-    color: var(--text-dark-low);
+    color: var(--theme2-text);
 }
 ul{
     padding-left: 20px;
 }
 li{
-    color: var(--text-dark-low);
+    color: var(--theme2-text);
     margin-bottom: 10px;
     font-weight: 400;
     letter-spacing: 1px;

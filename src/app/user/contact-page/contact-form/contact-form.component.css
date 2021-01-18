@@ -1,9 +1,9 @@
 .contact-form{
     padding: 80px 0px;
-    background-color: var(--background-white);
+    background-color: var(--theme2-background);
 }
 .contact-form h2{
-    color: var(--text-dark-high);
+    color: var(--theme2-text);
 }
 input{
     width:100%;
@@ -12,6 +12,7 @@ input{
     border: 1px solid rgb(168, 166, 166);
     outline: none;
     border-radius: 3px;
+    background-color: var(--theme2-background);
 }
 button{
     width: 100%;
