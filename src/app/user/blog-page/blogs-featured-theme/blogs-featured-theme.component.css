@@ -1,17 +1,14 @@
-.blog-featured{
-    padding: 20px 0px;
-    background-image: linear-gradient(to left bottom, #fd1603, #fe2428, #fd333f, #f94153, #f44f65);
-    margin-bottom: 40px;
+.featured-landing{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right top, #8b49f1, #8147ea, #7744e4, #6c42dd, #623fd6, #583acb, #4e35c1, #4430b6, #3828a6, #2d2095, #201986, #131176);
 }
-.blog-head{
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.blog-head h1{
+.featured-landing h1{
     color: white;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+.featured-landing p{
+    color:white;
 }

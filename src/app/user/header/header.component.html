@@ -78,8 +78,8 @@
 <div class="dashboard-header" *ngIf="headerDetail">
     <div class="container">
         <div class="row">
-            <div class="col">
-                <div class="dashboard-header-flex">
+            <div class="col" >
+                <div class="dashboard-header-flex" style="position: relative;">
                     <div class="tgl-icn" (click)="toggle()">
                         <button id="tgl-btn" class="">
                             <div class="line"></div>
@@ -91,15 +91,16 @@
                         </div>
                     </div>
 
-                    <div class="link-container">
+                    <div class="link-container" >
 
 
 
 
 
                         <div class="nav-links">
-                            <div class="mr-3">
+                            <div class="mr-3 ">
                                 <a routerLink = "" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">HOME</a>
+                             
                             </div>
                         </div>
 
@@ -111,8 +112,40 @@
 
                         <div class="nav-links">
                            
-                            <div class="mr-3">
-                                <a routerLink="services" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">SERVICES</a>
+                            <div class="mr-3 ser">
+                                <a routerLink="services" routerLinkActive="active-link" >SERVICES<i class="fa fa-caret-down ml-2"></i></a>
+                                <div class="dropdown">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h3>Online Marketing</h3>
+                                                <!-- <hr class="title-hr"> -->
+                                                <a routerLink="services/search-engine-optimization"><i class="fa fa-caret-right mr-2" aria-hidden="true"></i>Search Engine Optimization</a>
+                                                <a routerLink="services/social-media-marketing"><i class="fa fa-caret-right mr-2" aria-hidden="true"></i>Social Media Marketing</a>
+                                                <a href=""><i class="fa fa-caret-right mr-2" aria-hidden="true"></i>Build Your Bussiness A Brand</a>
+                                      
+                                            </div>
+                                            <div class="col-4">
+                                                <h3>Web Development</h3>
+                                                <!-- <hr class="title-hr"> -->
+                                                <a routerLink="services/web-development"><i class="fa fa-caret-right mr-2" aria-hidden="true"></i>Web Development Services</a>
+                                                <a routerLink="services/website-maintainance"><i class="fa fa-caret-right mr-2" aria-hidden="true"></i>Website Maintainance</a>
+                                                <a routerLink="portfolio"><i class="fa fa-caret-right mr-2" aria-hidden="true"></i>Checkout Portfolio</a>
+                                              
+                                              
+                                            </div>
+                        
+                                            <div class="col-4">
+                                               <div>
+                                                   <h3>Professional Code</h3>
+                                                   <img src="assets/images/—Pngtree—devices responsive web design_3540001.png" width="100%" alt="">
+                                                   <a href='https://pngtree.com/so/adjustable'>adjustable png from pngtree.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
 

@@ -30,6 +30,7 @@ import { TermsAndConditionsPageModule } from './user/terms-and-conditions-page/t
 import { TestimonialPageModule } from './user/testimonial-page/testimonial-page.module';
 import { SearchEngineOptimizationPageModule } from './user/search-engine-optimization-page/search-engine-optimization-page.module';
 import { SocialMediaMarketingPageModule } from './user/social-media-marketing-page/social-media-marketing-page.module';
+import { WebDevelopmentPageModule } from './user/web-development-page/web-development-page.module';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { SocialMediaMarketingPageModule } from './user/social-media-marketing-pa
     TermsAndConditionsPageModule,
     TestimonialPageModule,
     SearchEngineOptimizationPageModule,
-    SocialMediaMarketingPageModule
+    SocialMediaMarketingPageModule,
+    WebDevelopmentPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

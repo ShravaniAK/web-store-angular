@@ -1,0 +1,12 @@
+.main-container{
+    background-color: var(--theme2-background);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.main-container h2{
+    color: var(--theme2-text);
+}
+.main-container p{
+    /* text-align: justify; */
+    color: var(--theme2-text);
+}

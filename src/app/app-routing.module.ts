@@ -15,6 +15,7 @@ import { TermsAndConditionsPageComponent } from './user/terms-and-conditions-pag
 import { TestimonialPageComponent } from './user/testimonial-page/testimonial-page.component';
 import { SearchEngineOptimizationPageComponent } from './user/search-engine-optimization-page/search-engine-optimization-page.component';
 import { SocialMediaMarketingPageComponent } from './user/social-media-marketing-page/social-media-marketing-page.component';
+import { WebDevelopmentPageComponent } from './user/web-development-page/web-development-page.component';
 
 
 const routes: Routes = [
@@ -35,8 +36,10 @@ const routes: Routes = [
   { path:'privacy-policy', component : PrivacyPolicyPageComponent },
   { path:'terms-and-conditions', component : TermsAndConditionsPageComponent },
   { path:'testimonial', component : TestimonialPageComponent },
-  { path:'search-engine-optimization', component : SearchEngineOptimizationPageComponent },
-  { path:'social-media-marketing', component : SocialMediaMarketingPageComponent }
+  { path:'services', redirectTo : 'services/web-development', pathMatch : 'full' },
+  { path:'services/search-engine-optimization', component : SearchEngineOptimizationPageComponent },
+  { path:'services/social-media-marketing', component : SocialMediaMarketingPageComponent },
+  { path:'services/web-development', component : WebDevelopmentPageComponent }
 ];
 
 

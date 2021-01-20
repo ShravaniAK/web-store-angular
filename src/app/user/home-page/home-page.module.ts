@@ -10,7 +10,6 @@ import { BenifitsComponent } from './benifits/benifits.component';
 import { RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { QuickQuoteFormComponent } from './quick-quote-form/quick-quote-form.component';
 import { SharedModule } from '../shared/shared.module';
 
 
@@ -26,7 +25,6 @@ import { SharedModule } from '../shared/shared.module';
     StepsComponent,
     OurPortfolioComponent,
     BenifitsComponent,
-    QuickQuoteFormComponent
   ],
   imports: [
     CommonModule,

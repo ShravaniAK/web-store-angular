@@ -5,6 +5,7 @@ import { BlogsFeaturedThemeComponent } from './blogs-featured-theme/blogs-featur
 import { ShowBlogsComponent } from './show-blogs/show-blogs.component';
 import { RouterModule } from '@angular/router';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -17,7 +18,8 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
   imports: [
     CommonModule,
     RouterModule,
-    NgxSkeletonLoaderModule.forRoot()
+    NgxSkeletonLoaderModule.forRoot(),
+    SharedModule
   ]
 })
 export class BlogPageModule { }
