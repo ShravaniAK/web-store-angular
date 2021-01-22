@@ -50,33 +50,61 @@ p{
 }
 
 
+/* featured landing section start */
+.featured-landing{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.featured-landing h1{
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+.featured-landing p{
+    color:white;
+    text-align: justify;
+}
+/* featured landing section end */
 
 
 
-
+/* single post global css start */
 .single-post p{
-    font-size: 15px ;
-    color: rgb(34, 34, 34);
+    font-size: 16px ;
+    color: var(--theme2-text);
     letter-spacing: .5px;
+    text-align: justify;
+    margin-bottom: 20px;
 }
 .single-post h2{
     font-size: 22px ;
-    color: rgb(34, 34, 34);
+    color: var(--theme2-text);
     letter-spacing: .5px;
-    font-weight: 500;
+    text-transform: unset;
+    font-weight: 600;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 .single-post h3{
     font-size: 20px ;
-    color: rgb(34, 34, 34);
+    color: var(--theme2-text);
     letter-spacing: .5px;
-    font-weight: 500;
+    font-weight: 600;
+    text-align: justify;
 }
 .single-post a{
     text-decoration:none;
-    color: rgb(106, 106, 248);
+    color: rgb(73, 73, 245);
     cursor: pointer;
 }
 
 .single-post ul{
     padding-left: 20px;
 }
+.single-post ul li{
+    color: var(--theme2-text);
+    text-align: justify;
+    margin-bottom: 10px;
+}
+/* single post global css end */

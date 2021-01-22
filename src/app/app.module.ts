@@ -31,6 +31,9 @@ import { TestimonialPageModule } from './user/testimonial-page/testimonial-page.
 import { SearchEngineOptimizationPageModule } from './user/search-engine-optimization-page/search-engine-optimization-page.module';
 import { SocialMediaMarketingPageModule } from './user/social-media-marketing-page/social-media-marketing-page.module';
 import { WebDevelopmentPageModule } from './user/web-development-page/web-development-page.module';
+import { BuildYourBussinessPageModule } from './user/build-your-bussiness-page/build-your-bussiness-page.module';
+import { WebsiteMaintainancePageModule } from './user/website-maintainance-page/website-maintainance-page.module';
+import { PortfolioPageModule } from './user/portfolio-page/portfolio-page.module';
 
 @NgModule({
   declarations: [
@@ -60,7 +63,10 @@ import { WebDevelopmentPageModule } from './user/web-development-page/web-develo
     TestimonialPageModule,
     SearchEngineOptimizationPageModule,
     SocialMediaMarketingPageModule,
-    WebDevelopmentPageModule
+    WebDevelopmentPageModule,
+    BuildYourBussinessPageModule,
+    WebsiteMaintainancePageModule,
+    PortfolioPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

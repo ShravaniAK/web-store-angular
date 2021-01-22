@@ -12,41 +12,48 @@
 }
 .footer h2{
     color: rgb(238, 236, 236);
-    font-size: 20px;
+    font-size: 18px;
+    text-transform: unset;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-bottom: 1px;
+    text-align: left;
 }
 .footer p{
     color: #676666;
-    font-weight: 600;
+    font-weight: 500;
     text-align: justify;
 }
 .hr-line{
     background-color: rgb(66, 66, 66);
 }
 .copyright{
+    border-top: 1px solid rgb(19, 18, 18);
     background-color: rgb(27, 27, 27);
     padding:10px 0px;
+    border-bottom: 1px solid rgb(19, 18, 18);
     /* border-bottom: 1px solid black; */
 }
 .copyright p{
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
-    color: rgb(238, 236, 236);
+    color: rgb(209, 206, 206);
     margin: 0;
     font-size: 14px;
 }
 
 .points a{
-    display: block;
+    display: inline-block;
     color: #676666;
     text-decoration: none;
     margin-bottom: 10px;
-    font-weight:600;
+    font-weight:500;
     transition: all .3s ease;
     outline: none;
 }
 .points a:hover{
     color: #4cc2c0;
-    transform: translateX(3px);
+    /* transform: translateX(3px); */
 }
 
 .title-hr{

@@ -16,6 +16,9 @@ import { TestimonialPageComponent } from './user/testimonial-page/testimonial-pa
 import { SearchEngineOptimizationPageComponent } from './user/search-engine-optimization-page/search-engine-optimization-page.component';
 import { SocialMediaMarketingPageComponent } from './user/social-media-marketing-page/social-media-marketing-page.component';
 import { WebDevelopmentPageComponent } from './user/web-development-page/web-development-page.component';
+import { BuildYourBussinessPageComponent } from './user/build-your-bussiness-page/build-your-bussiness-page.component';
+import { WebsiteMaintainancePageComponent } from './user/website-maintainance-page/website-maintainance-page.component';
+import { PortfolioPageComponent } from './user/portfolio-page/portfolio-page.component';
 
 
 const routes: Routes = [
@@ -39,7 +42,10 @@ const routes: Routes = [
   { path:'services', redirectTo : 'services/web-development', pathMatch : 'full' },
   { path:'services/search-engine-optimization', component : SearchEngineOptimizationPageComponent },
   { path:'services/social-media-marketing', component : SocialMediaMarketingPageComponent },
-  { path:'services/web-development', component : WebDevelopmentPageComponent }
+  { path:'services/web-development', component : WebDevelopmentPageComponent },
+  { path:'services/build-your-bussiness-a-brand', component : BuildYourBussinessPageComponent },
+  { path:'services/website-maintainance', component : WebsiteMaintainancePageComponent },
+  { path:'portfolio', component : PortfolioPageComponent }
 ];
 
 
